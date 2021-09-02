@@ -1,0 +1,2 @@
+from jikanvision.HandsTrackingModule import HandDetector
+from jikanvision.FaceDetectionModule import FaceDetector
