@@ -24,5 +24,5 @@ while True:
             centerPoint2 = hand2['center']  # Center of the hand cx,cy
             handType2 = hand2["type"]  # Hand Type "Left" or "Right"
 
-    cv2.imshow("Jikan Vision Library - HandDetector Moduleu", img)
+    cv2.imshow("Jikan Vision Library - HandDetector Module", img)
     cv2.waitKey(1)
