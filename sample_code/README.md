@@ -30,7 +30,7 @@ handDetector = jikanvision.HandDetector(maxHands=2)
 
 while True:
     success, img = cap.read()
-    img = handDetector.findHands(img)
+    hands, img = handDetector.findHands(img)
 
     cv2.imshow("Jikan Vision Library - HandDetector Module", img)
     cv2.waitKey(1)
@@ -47,7 +47,7 @@ handDetector = jikanvision.HandDetector(maxHands=2)
 
 while True:
     success, img = cap.read()
-    img = handDetector.findHands(img)
+    hands, img = handDetector.findHands(img)
     img, bboxs = faceDetector.findFaces(img)
 
     cv2.imshow("Jikan Vision Librarye", img)
