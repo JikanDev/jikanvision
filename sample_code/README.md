@@ -56,7 +56,6 @@ while True:
 
 _Détécter une/des main(s) et obtenir toutes ces/leurs informations_
 ```sh
-  
 import jikanvision
 import cv2
 
@@ -144,8 +143,7 @@ while True:
 ```
 
 _Detect a hand(s) and obtain all this/their informations_
-```sh
-  
+```sh 
 import jikanvision
 import cv2
 
