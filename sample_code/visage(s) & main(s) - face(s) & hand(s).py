@@ -3,7 +3,7 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 faceDetector = jikanvision.FaceDetector()
-handDetector = jikanvision.HandDetector(maxHands=2)
+handDetector = jikanvision.HandDetector()
 
 while True:
     success, img = cap.read()
