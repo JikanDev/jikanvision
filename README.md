@@ -3,18 +3,43 @@
 
 Jikan Vision est une librairie python basée sur Mediapipe et OpenCV. Le but de cette librairie est de simplifier et d'accélérer la création de projets python basés sur Mediapipe.
 
-## Fonctionnalités prises en charge
+## Fonctionnalités prises en charge :
+## _Main(s) :_
+- Le suivi d'une ou de plusieurs mains.
+- Affichage + Récupération des repères sur la/les main(s).
+- Affichage + Récupération du type de main (Droite ou Gauche).
+- Affichage + Récupération des coordonnées d'une "boîte" autour de la/les main(s).
+- Récupération du centre de cette "boîte".
 
-- Le suivi d'une ou de plusieurs mains, ainsi que l'affichage des repères sur la/les main(s)
-- La détection de un ou plusieurs visages, aisni que l'affichage d'un carré autour de/des visage(s)
- et du score de détection
+## _Visage(s) :_
+- La détection de un ou plusieurs visages.
+- Affichage d'un carré autour de/des visage(s) et du score de détection.
 
-## Installation
+## Première installation
 
-Faites simplement cette command pour installer Jikan Vision et toutes ces dépendances :
+Faites simplement cette commande pour installer Jikan Vision et toutes ses dépendances :
 
 ```sh
 pip install jikanvision
+```
+ou
+
+```sh
+py -m pip install jikanvision
+```
+
+## Mettre à jour la librairie
+
+Faites simplement cette commande pour mettre à jour JIkan Vision et toutes ses dépendances :
+
+```sh
+pip install -U jikanvision
+```
+
+ou
+
+```sh
+py -m pip install -U jikanvision
 ```
 
 ## Dépendances
@@ -34,16 +59,43 @@ pip install jikanvision
 ## _EN_
 Jikan Vision is a python library based on Mediapipe and OpenCV. The goal of this library is to simplify and accelerate the creation of python projects based on Mediapipe.
 
-## Supported features
-- Tracking of one or more hands, as well as the display of landmarks on the hand (s)
-- The detection of one or more faces, as well as the display of a square around the face (s)
-  and the detection score
+## Supported features :
+## _Hand(s):_
+- The follow-up of one or more hands.
+- Display + Retrieval of marks on the hand(s).
+- Display + Retrieval of the type of hand (Right or Left).
+- Display + Retrieval of the coordinates of a "box" around the hand(s).
+- Recovery of the center of this "box".
 
-## Installation
+## _Face(s):_
+- Detection of one or more faces.
+- Display of a square around the face(s) and the detection score.
+
+## First installation
 Simply do this command to install Jikan Vision and all this dependencies :
 
 ```sh
 pip install jikanvision
+```
+
+or
+
+```sh
+py -m pip install jikanvision
+```
+
+## Update the library
+
+Simply do this command to update Jikan Vision and all this dependencies :
+
+```sh
+pip install -U jikanvision
+```
+
+or
+
+```sh
+py -m pip install -U jikanvision
 ```
 
 ## Dependencies
