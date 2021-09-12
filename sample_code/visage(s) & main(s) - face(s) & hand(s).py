@@ -10,5 +10,5 @@ while True:
     hands, img = handDetector.findHands(img)
     img, bboxs = faceDetector.findFaces(img)
 
-    cv2.imshow("Jikan Vision Librarye", img)
+    cv2.imshow("Jikan Vision Library", img)
     cv2.waitKey(1)
