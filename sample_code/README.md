@@ -26,7 +26,7 @@ import jikanvision
 import cv2
 
 cap = cv2.VideoCapture(0)
-handDetector = jikanvision.HandDetector(maxHands=2)
+handDetector = jikanvision.HandDetector()
 
 while True:
     success, img = cap.read()
@@ -43,7 +43,7 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 faceDetector = jikanvision.FaceDetector()
-handDetector = jikanvision.HandDetector(maxHands=2)
+handDetector = jikanvision.HandDetector()
 
 while True:
     success, img = cap.read()
@@ -81,11 +81,11 @@ import jikanvision
 import cv2
 
 cap = cv2.VideoCapture(0)
-handDetector = jikanvision.HandDetector(maxHands=2)
+handDetector = jikanvision.HandDetector()
 
 while True:
     success, img = cap.read()
-    img = handDetector.findHands(img)
+    hands, img = handDetector.findHands(img)
 
     cv2.imshow("Jikan Vision Library - HandDetector Module", img)
     cv2.waitKey(1)
@@ -98,11 +98,11 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 faceDetector = jikanvision.FaceDetector()
-handDetector = jikanvision.HandDetector(maxHands=2)
+handDetector = jikanvision.HandDetector()
 
 while True:
     success, img = cap.read()
-    img = handDetector.findHands(img)
+    hands, img = handDetector.findHands(img)
     img, bboxs = faceDetector.findFaces(img)
 
     cv2.imshow("Jikan Vision Librarye", img)
