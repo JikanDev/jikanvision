@@ -30,7 +30,7 @@ py -m pip install jikanvision
 
 ## Mettre à jour la librairie
 
-Faites simplement cette commande pour mettre à jour JIkan Vision et toutes ses dépendances :
+Faites simplement cette commande pour mettre à jour Jikan Vision et toutes ses dépendances :
 
 ```sh
 pip install -U jikanvision
@@ -53,6 +53,7 @@ py -m pip install -U jikanvision
 - 3.8
 - 3.7
 - 3.6
+- 3.5
 
 ##
 ##
@@ -108,6 +109,7 @@ py -m pip install -U jikanvision
 - 3.8
 - 3.7
 - 3.6
+- 3.5
 
 ##
 ##
