@@ -1,7 +1,7 @@
 """
 Face Detection Module
 By : JikanDev
-Website : https://github.com/JikanDev/jikanvision
+Website : https://jikandev.xyz/
 """
 import cv2
 import mediapipe as mp
@@ -11,15 +11,19 @@ class FaceDetector():
     """
     Find faces in realtime using the light weight model provided in the mediapipe library.
     """
-    def __init__(self, minDetectionCon=0.5):
+    def __init__(self, minDetectCon=0.5, model=0):
         """
-        :param minDetectionCon: Minimum Detection Confidence Threshold
+        :param minDetectCon: Minimum Detection Confidence Threshold.
+        :param model: Model adaptation, 0 to select a short-range model that works
+        best for faces within 2 meters from the camera, and 1 for a full-range
+        model best for faces within 5 meters.
         """
-        self.minDetectionCon = minDetectionCon
+        self.minDetectCon = minDetectCon
+        self.model = model
 
         self.mpFaceDetection = mp.solutions.face_detection
         self.mpDraw = mp.solutions.drawing_utils
-        self.faceDetection = self.mpFaceDetection.FaceDetection(self.minDetectionCon)
+        self.faceDetection = self.mpFaceDetection.FaceDetection(self.minDetectCon, self.model)
 
     def findFaces(self, img, draw=True):
         """
@@ -70,12 +74,12 @@ def main():
     """
     Example code to use the module.
     """
-    cap = cv2.VideoCapture(0)
-    detector = FaceDetector()
+    cap = cv2.VideoCapture(0)  # Get your camera
+    detector = FaceDetector()  # Call the FaceDetector class
 
     while True:
-        success, img = cap.read()
-        img, bboxs = detector.findFaces(img)
+        success, img = cap.read()  # If success, img = read your camera image
+        img, bboxs = detector.findFaces(img)  # img & bboxs call the findFaces() function of FaceDetector
 
         cv2.imshow("Face Detection Module", img)
         cv2.waitKey(1)

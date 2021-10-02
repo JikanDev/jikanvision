@@ -8,7 +8,13 @@ Jikan Vision est une librairie python basée sur Mediapipe et OpenCV. Le but de 
 - Le suivi d'une ou de plusieurs mains.
 - Affichage + Récupération des repères sur la/les main(s).
 - Affichage + Récupération du type de main (Droite ou Gauche).
-- Affichage + Récupération des coordonnées d'une "boîte" autour de la/les main(s).
+- Affichage + Récupération des coordonnées d'une "boîte" autour de la/des main(s).
+- Récupération du centre de cette "boîte".
+
+## _Corps :_
+- Le suivi d'un ou de plusieurs corps.
+- Affichage + Récupération des repères sur le/les corps.
+- Affichage + Récupération des coordonnées d'une "boîte" autour du/des corps.
 - Récupération du centre de cette "boîte".
 
 ## _Visage(s) :_
@@ -66,6 +72,12 @@ Jikan Vision is a python library based on Mediapipe and OpenCV. The goal of this
 - Display + Retrieval of marks on the hand(s).
 - Display + Retrieval of the type of hand (Right or Left).
 - Display + Retrieval of the coordinates of a "box" around the hand(s).
+- Recovery of the center of this "box".
+
+## _Body(ies):_
+- The follow-up of one or more bodies.
+- Display + Retrieval of marks on the body(ies).
+- Display + Retrieval of the coordinates of a "box" around the body(ies).
 - Recovery of the center of this "box".
 
 ## _Face(s):_

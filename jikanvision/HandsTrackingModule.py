@@ -1,7 +1,7 @@
 """
 Hand Tracking Module
 By : JikanDev
-Website : https://github.com/JikanDev/jikanvision
+Website : https://jikandev.xyz/
 """
 import cv2
 import mediapipe as mp
@@ -13,30 +13,31 @@ class HandDetector:
     Also provides bounding box info of the hand found.
     """
 
-    def __init__(self, mode=False, maxHands=2, detectionCon=0.5, trackCon=0.5):
+    def __init__(self, mode=False, maxHands=2, minDetectCon=0.5, minTrackCon=0.5):
         """
-        :param mode: In static mode, detection is done on each image: slower
-        :param maxHands: Maximum number of hands to detect
-        :param detectionCon: Minimum Detection Confidence Threshold
-        :param trackCon: Minimum Tracking Confidence Threshold
+        :param mode: In static mode, detection is done on each image: slower.
+        :param maxHands: Maximum number of hands to detect.
+        :param minDetectCon: Minimum Detection Confidence Threshold.
+        :param minTrackCon: Minimum Tracking Confidence Threshold.
         """
         self.mode = mode
         self.maxHands = maxHands
-        self.detectionCon = detectionCon
-        self.trackCon = trackCon
+        self.minDetectCon = minDetectCon
+        self.minTrackCon = minTrackCon
 
         self.mpHands = mp.solutions.hands
-        self.hands = self.mpHands.Hands(self.mode, self.maxHands, self.detectionCon, self.trackCon)
+        self.hands = self.mpHands.Hands(self.mode, self.maxHands, self.minDetectCon, self.minTrackCon)
         self.mpDraw = mp.solutions.drawing_utils
 
         self.lmList = []
 
-    def findHands(self, img, draw=True, flipType=True):
+    def findHands(self, img, draw=True, drawBboxs=True, camFlip=True):
         """
         Finds hands in a BGR image.
         :param img: Image to find the hands in.
         :param draw: Flag to draw the output on the image.
-        :param flipType: Flag to know if your camera flip your image.
+        :param drawBboxs: Flag to draw bboxs on the draw output.
+        :param camFlip: Flag to know if your camera flip your image.
         :return: Image with or without drawings.
         """
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -52,6 +53,7 @@ class HandDetector:
                 mylmList = []
                 xList = []
                 yList = []
+
                 for id, lm in enumerate(handLms.landmark):
                     px, py = int(lm.x * w), int(lm.y * h)
                     mylmList.append([px, py])
@@ -68,7 +70,7 @@ class HandDetector:
                 myHand["bbox"] = bbox
                 myHand["center"] = (cx, cy)
 
-                if flipType:
+                if camFlip:
                     if handType.classification[0].label == "Right":
                         myHand["type"] = "Left"
                     else:
@@ -79,8 +81,9 @@ class HandDetector:
 
                 if draw:
                     self.mpDraw.draw_landmarks(img, handLms, self.mpHands.HAND_CONNECTIONS)
-                    cv2.rectangle(img, (bbox[0] - 20, bbox[1] - 20), (bbox[0] + bbox[2] + 20, bbox[1] + bbox[3] + 20), (255, 255, 255), 2)
-                    cv2.putText(img, myHand["type"], (bbox[0] - 30, bbox[1] - 30), cv2.FONT_HERSHEY_PLAIN, 2, (255, 255, 255), 2)
+                    if drawBboxs:
+                        cv2.rectangle(img, (bbox[0] - 20, bbox[1] - 20), (bbox[0] + bbox[2] + 20, bbox[1] + bbox[3] + 20), (255, 255, 255), 2)
+                        cv2.putText(img, myHand["type"], (bbox[0] - 30, bbox[1] - 30), cv2.FONT_HERSHEY_PLAIN, 2, (255, 255, 255), 2)
         if draw:
             return allHands, img
         else:
