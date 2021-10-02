@@ -6,7 +6,7 @@ bodyDetector = jikanvision.BodyDetector()
 
 while True:
     success, img = cap.read()
-    bodies, img = handDetector.findBodies(img)
+    bodies, img = bodyDetector.findBodies(img)
 
     cv2.imshow("Jikan Vision Library - BodyDetector Module", img)
     cv2.waitKey(1)
