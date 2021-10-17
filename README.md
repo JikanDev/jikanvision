@@ -4,22 +4,32 @@
 Jikan Vision est une librairie python basée sur Mediapipe et OpenCV. Le but de cette librairie est de simplifier et d'accélérer la création de projets python basés sur Mediapipe.
 
 ## Fonctionnalités prises en charge :
-## _Main(s) :_
+## _Détection de une ou plusieurs mains :_
 - Le suivi d'une ou de plusieurs mains.
-- Affichage + Récupération des repères sur la/les main(s).
-- Affichage + Récupération du type de main (Droite ou Gauche).
-- Affichage + Récupération des coordonnées d'une "boîte" autour de la/des main(s).
+- Affichage de 20 points sur chaque main(s).
+- Récupération des coordonnées des 20 points par main(s) dans des listes.
+- Affichage du type de main (Droite ou Gauche).
+- Récupération du type de main.
+- Affichage d'une "boîte" autour de chaque main(s).
+- Récupération des coordonnées de cette "boîte".
 - Récupération du centre de cette "boîte".
 
-## _Corps :_
-- Le suivi d'un ou de plusieurs corps.
-- Affichage + Récupération des repères sur le/les corps.
-- Affichage + Récupération des coordonnées d'une "boîte" autour du/des corps.
+## _Détection d'un corps :_
+- Le suivi d'un corps.
+- Affichage de 32 points sur le corps.
+- Récupéreration des 32 points dans une liste.
+- Affichage d'une "boîte" autour du corps.
+- Récupération des coordonnées de la "boîte".
 - Récupération du centre de cette "boîte".
 
-## _Visage(s) :_
+## _Détection de un ou plusieurs visages :_
 - La détection de un ou plusieurs visages.
-- Affichage d'un carré autour de/des visage(s) et du score de détection.
+- Affichage d'un carré autour du/des visage(s) et du score de détection.
+
+## _Mesh sûr un/des visage(s) :_
+- Détection d'un ou des visages puis application d'un mesh de 468 points.
+- Affichage du mesh et des contours du visage.
+- Récupération des coordonnées des 468 points dans une liste.
 
 ## Première installation
 
@@ -67,22 +77,32 @@ py -m pip install -U jikanvision
 Jikan Vision is a python library based on Mediapipe and OpenCV. The goal of this library is to simplify and accelerate the creation of python projects based on Mediapipe.
 
 ## Supported features :
-## _Hand(s):_
+## _Detection of one or more hands:_
 - The follow-up of one or more hands.
-- Display + Retrieval of marks on the hand(s).
-- Display + Retrieval of the type of hand (Right or Left).
-- Display + Retrieval of the coordinates of a "box" around the hand(s).
+- Display of 20 points on each hand (s).
+- Retrieval of the coordinates of the 20 points per hand (s) in lists.
+- Display of the type of hand (Right or Left).
+- Recovery of the type of hand.
+- Display of a "box" around each hand (s).
+- Retrieval of the coordinates of this "box".
 - Recovery of the center of this "box".
 
-## _Body(ies):_
-- The follow-up of one or more bodies.
-- Display + Retrieval of marks on the body(ies).
-- Display + Retrieval of the coordinates of a "box" around the body(ies).
+## _Detection of a body:_
+- Tracking a body.
+- Display of 32 points on the body.
+- Retrieve the 32 points in a list.
+- Display of a "box" around the body.
+- Retrieval of the coordinates of the "box".
 - Recovery of the center of this "box".
 
-## _Face(s):_
+## _Detection of one or more faces:_
 - Detection of one or more faces.
-- Display of a square around the face(s) and the detection score.
+- Display of a square around the face (s) and the detection score.
+
+## _Mesh sure a face (s):_
+- Detection of one or more faces then application of a mesh of 468 points.
+- Display of the mesh and contours of the face.
+- Retrieval of the coordinates of the 468 points in a list.
 
 ## First installation
 Simply do this command to install Jikan Vision and all this dependencies :

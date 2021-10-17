@@ -3,5 +3,6 @@ setup.cfg
 setup.py
 jikanvision\BodyTrackingModule.py
 jikanvision\FaceDetectionModule.py
+jikanvision\FaceMeshModule.py
 jikanvision\HandsTrackingModule.py
 jikanvision\__init__.py
