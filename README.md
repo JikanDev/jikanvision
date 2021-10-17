@@ -17,7 +17,7 @@ Jikan Vision est une librairie python basée sur Mediapipe et OpenCV. Le but de 
 ## _Détection d'un corps :_
 - Le suivi d'un corps.
 - Affichage de 32 points sur le corps.
-- Récupéreration des 32 points dans une liste.
+- Récupération des 32 points dans une liste.
 - Affichage d'une "boîte" autour du corps.
 - Récupération des coordonnées de la "boîte".
 - Récupération du centre de cette "boîte".
@@ -99,7 +99,7 @@ Jikan Vision is a python library based on Mediapipe and OpenCV. The goal of this
 - Detection of one or more faces.
 - Display of a square around the face (s) and the detection score.
 
-## _Mesh sure a face (s):_
+## _Mesh on or more faces:_
 - Detection of one or more faces then application of a mesh of 468 points.
 - Display of the mesh and contours of the face.
 - Retrieval of the coordinates of the 468 points in a list.
