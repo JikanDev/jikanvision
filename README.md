@@ -1,4 +1,8 @@
 # Jikan Vision
+
+![Lib Version](https://img.shields.io/pypi/v/jikanvision.svg)
+![Python Versions](https://img.shields.io/pypi/pyversions/jikanvision.svg)
+
 ## _FR_
 
 Jikan Vision est une librairie python basée sur Mediapipe et OpenCV. Le but de cette librairie est de simplifier et d'accélérer la création de projets python basés sur Mediapipe.
