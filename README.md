@@ -4,7 +4,7 @@
 ![Python Versions](https://img.shields.io/pypi/pyversions/jikanvision.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d56be9b7e37a4913881d6f154f780332)](https://www.codacy.com/gh/JikanDev/jikanvision/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JikanDev/jikanvision&amp;utm_campaign=Badge_Grade)
 
-[Vous pouvez voir une version française du README ici.](https://github.com/JikanDev/jikanvision/blob/main/README.md)
+[Vous pouvez voir une version française du README ici.](https://github.com/JikanDev/jikanvision/blob/main/README%20FR.md)
 
 Jikan Vision is a python library based on Mediapipe and OpenCV. The goal of this library is to simplify and accelerate the creation of python projects based on Mediapipe.
 
@@ -77,4 +77,4 @@ py -m pip install -U jikanvision
 
 ## License
 
-Apache License 2.0
+[Apache License 2.0](https://github.com/JikanDev/jikanvision/blob/main/LICENSE)
