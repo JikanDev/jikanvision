@@ -66,7 +66,7 @@ py -m pip install -U jikanvision
 ## Dépendances
 
 - [Mediapipe](https://pypi.org/project/mediapipe/) - MediaPipe propose des solutions de ML personnalisables et multiplateformes pour les médias en direct et en streaming.
-- [OPenCV-Python](https://pypi.org/project/opencv-python/) - Packages OpenCV pré-construits uniquement pour le processeur pour Python.
+- [OpenCV-Python](https://pypi.org/project/opencv-python/) - Packages OpenCV pré-construits uniquement pour le processeur pour Python.
 
 ## Testé sur les versions Python suivantes :
 
