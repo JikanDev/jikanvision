@@ -2,6 +2,7 @@
 
 ![Lib Version](https://img.shields.io/pypi/v/jikanvision.svg)
 ![Python Versions](https://img.shields.io/pypi/pyversions/jikanvision.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d56be9b7e37a4913881d6f154f780332)](https://www.codacy.com/gh/JikanDev/jikanvision/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JikanDev/jikanvision&amp;utm_campaign=Badge_Grade)
 
 ## _FR_
 
