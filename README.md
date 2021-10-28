@@ -65,7 +65,7 @@ py -m pip install -U jikanvision
 
 ## Dependencies
 - [Mediapipe](https://pypi.org/project/mediapipe/) - MediaPipe offers cross-platform, customizable ML solutions for live and streaming media.
-- [OPenCV-Python](https://pypi.org/project/opencv-python/) - Pre-built CPU-only OpenCV packages for Python.
+- [OpenCV-Python](https://pypi.org/project/opencv-python/) - Pre-built CPU-only OpenCV packages for Python.
 
 ## Tested on the following Python versions:
 
