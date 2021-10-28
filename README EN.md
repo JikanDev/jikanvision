@@ -74,3 +74,7 @@ py -m pip install -U jikanvision
 - 3.7
 - 3.6
 - 3.5
+
+## License
+
+Apache License 2.0
