@@ -2,6 +2,7 @@
 
 ![Lib Version](https://img.shields.io/pypi/v/jikanvision.svg)
 ![Python Versions](https://img.shields.io/pypi/pyversions/jikanvision.svg)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d56be9b7e37a4913881d6f154f780332)](https://www.codacy.com/gh/JikanDev/jikanvision/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JikanDev/jikanvision&amp;utm_campaign=Badge_Grade)
 
 [You can see an english version of the README here.](https://github.com/JikanDev/jikanvision/blob/main/README.md)
