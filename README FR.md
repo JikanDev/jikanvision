@@ -9,6 +9,8 @@
 
 Jikan Vision est une librairie python basée sur Mediapipe et OpenCV. Le but de cette librairie est de simplifier et d'accélérer la création de projets python basés sur Mediapipe.
 
+<br/>
+
 ## Fonctionnalités prises en charge :
 ## _Détection de une ou plusieurs mains :_
 - Le suivi d'une ou de plusieurs mains.
@@ -37,6 +39,8 @@ Jikan Vision est une librairie python basée sur Mediapipe et OpenCV. Le but de 
 - Affichage du mesh et des contours du visage.
 - Récupération des coordonnées des 468 points dans une liste.
 
+<br/>
+
 ## Première installation
 
 Faites simplement cette commande pour installer Jikan Vision et toutes ses dépendances :
@@ -49,6 +53,8 @@ ou
 ```sh
 py -m pip install jikanvision
 ```
+
+<br/>
 
 ## Mettre à jour la librairie
 
@@ -64,10 +70,14 @@ ou
 py -m pip install -U jikanvision
 ```
 
+<br/>
+
 ## Dépendances
 
 - [Mediapipe](https://pypi.org/project/mediapipe/) - MediaPipe propose des solutions de ML personnalisables et multiplateformes pour les médias en direct et en streaming.
 - [OpenCV-Python](https://pypi.org/project/opencv-python/) - Packages OpenCV pré-construits uniquement pour le processeur pour Python.
+
+<br/>
 
 ## Testé sur les versions Python suivantes :
 
@@ -76,6 +86,8 @@ py -m pip install -U jikanvision
 - 3.7
 - 3.6
 - 3.5
+
+<br/>
 
 ## License
 
